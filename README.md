@@ -6,15 +6,12 @@
 
 - 🔄 **Smooth Reveal:** Fade-in effect when the image is loaded.  
 - ⚙️ **Customizable Transitions:** Control transition duration and timing function.  
-- 🧩 **Flexible Props:** Customize class name, click handler, and alt text.
 
 ---
 
 ## 🛠️ Installation
 
-    npm install react react-dom prop-types
-
-*No separate installation required for the component if it's part of your project.*
+    npm install react-image-reveal
 
 ---
 
