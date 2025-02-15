@@ -1,22 +1,39 @@
 {
-    "name": "react-image-reveal",
-    "version": "1.0.0",
-    "description": "A React component that fades images in on load",
-    "main": "src/ReactImageReveal.js",
-    "module": "src/ReactImageReveal.js",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/your-username/react-image-reveal.git"
-    },
-    "author": "Your Name",
-    "license": "MIT",
-    "scripts": {
-      "build": "echo No build step",
-      "test": "echo No test specified"
-    },
-    "peerDependencies": {
-        "react": ">=19.0.0",
-        "react-dom": ">=19.0.0"
+  "name": "react-image-reveal",
+  "version": "1.0.2",
+  "description": "A React component that fades images in on load",
+  "main": "dist/ReactImageReveal.cjs.js",
+  "module": "dist/ReactImageReveal.esm.js",
+  "types": "dist/ReactImageReveal.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ReactImageReveal.esm.js",
+      "require": "./dist/ReactImageReveal.cjs.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayfarer/react-image-reveal.git"
+  },
+  "author": "Sean Ray",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx microbundle --jsx React.createElement --format cjs,esm",
+    "test": "echo No test specified"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "fade",
+    "reveal",
+    "lazyload",
+    "progressive"
+  ],
+  "devDependencies": {
+    "microbundle": "^0.15.1"
   }
-  
+}
